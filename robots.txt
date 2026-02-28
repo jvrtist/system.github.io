@@ -1,0 +1,45 @@
+# ISS Investigations - Robots.txt for SEO
+# Optimized for search engine crawling and indexing
+
+User-agent: *
+Allow: /
+
+# Block internal system/admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /includes/
+Disallow: /config.php
+Disallow: /private/
+Disallow: /login.php
+Disallow: /logout.php
+Disallow: /client_login.php
+Disallow: /client_logout.php
+Disallow: /client_portal/
+Disallow: /uploads/
+Disallow: /cgi-bin/
+Disallow: /*.env
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Allow search engines to crawl public assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl delay (respect server resources)
+Crawl-delay: 1
+
+# Request rate limit for faster crawling
+Request-rate: 30/60
+
+# Sitemaps
+Sitemap: https://iss-investigations.co.za/sitemap.xml
+Sitemap: https://iss-investigations.co.za/blog-sitemap.xml
+
+# Google Search Console verification
+# Google-site-verification: [your-verification-code]
